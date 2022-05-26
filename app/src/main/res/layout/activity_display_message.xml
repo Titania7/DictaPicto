@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/seclayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/vertclair1"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".DisplayMessageActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/vertclair2"
+        android:gravity="center_horizontal">
+
+        <GridLayout
+            android:id="@+id/layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="6"
+            android:orientation="horizontal"
+            android:rowCount="2">
+
+        </GridLayout>
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/another"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/outLoud"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="600dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/brun"
+            android:clickable="true"
+            android:contentDescription="@string/outloudButton"
+            android:foreground="@android:drawable/ic_lock_silent_mode_off"
+            android:foregroundTint="@color/white"
+            tools:ignore="OnClick,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/answerchild"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp"
+            android:clickable="true"
+            android:contentDescription="@string/outloudButton"
+            android:foreground="@android:drawable/stat_notify_chat"
+            android:foregroundTint="@color/vert"
+            android:background="@color/vertclair1"
+            android:gravity="right"
+            tools:ignore="OnClick,SpeakableTextPresentCheck" />
+
+    </RelativeLayout>
+
+</LinearLayout>

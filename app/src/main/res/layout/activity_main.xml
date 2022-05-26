@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="0dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/back_main"
+    tools:context=".MainActivity">
+
+
+    <!--Adding the Button in the layout-->
+
+    <RelativeLayout
+        android:id="@+id/firstrow"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_height="wrap_content"
+        android:columnCount="6"
+        android:orientation="horizontal"
+        android:rowCount="2">
+
+
+        <ImageButton
+            android:id="@+id/microphone"
+            style="?attr/imageButtonStyle"
+            android:layout_alignParentStart="true"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/brun"
+            android:clickable="true"
+            android:foreground="@android:drawable/ic_btn_speak_now"
+            android:foregroundTint="@color/white"
+            android:onClick="setOnClickListener"
+            tools:ignore="OnClick,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/question"
+            style="?attr/imageButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/microphone"
+            android:background="@color/back_teacher"
+            android:clickable="true"
+            android:foreground="@android:drawable/ic_menu_help"
+            android:foregroundTint="@color/black"
+            android:onClick="setOnClickListener"
+            tools:ignore="OnClick,SpeakableTextPresentCheck" />
+
+        <!--<ImageButton
+            android:id="@+id/student1"
+            style="?attr/imageButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:foreground="@drawable/girlone"
+            android:onClick="setOnClickListener"
+            tools:ignore="OnClick,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/student2"
+            style="?attr/imageButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toStartOf="@+id/student1"
+            android:clickable="true"
+            android:foreground="@drawable/boythree"
+            android:onClick="setOnClickListener"
+            tools:ignore="OnClick,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/student3"
+            style="?attr/imageButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toStartOf="@+id/student2"
+            android:clickable="true"
+            android:foreground="@drawable/girltwo"
+            android:onClick="setOnClickListener"
+            tools:ignore="OnClick,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/student4"
+            style="?attr/imageButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toStartOf="@+id/student3"
+            android:clickable="true"
+            android:foreground="@drawable/boytwo"
+            android:onClick="setOnClickListener"
+            tools:ignore="OnClick,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/student5"
+            style="?attr/imageButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toStartOf="@+id/student4"
+            android:clickable="true"
+            android:foreground="@drawable/girlthree"
+            android:onClick="setOnClickListener"
+            tools:ignore="OnClick,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/student6"
+            style="?attr/imageButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toStartOf="@+id/student5"
+            android:clickable="true"
+            android:foreground="@drawable/boyone"
+            android:onClick="setOnClickListener"
+            tools:ignore="OnClick,SpeakableTextPresentCheck" />-->
+
+    </RelativeLayout>
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/bleuclair"
+        android:gravity="center_horizontal">
+
+        <GridLayout
+            android:id="@+id/layout"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="6"
+            android:orientation="horizontal"
+            android:rowCount="2" />
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/valider"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/vert"
+        android:foreground="@android:drawable/ic_menu_view"
+        android:foregroundGravity="center"
+        android:foregroundTint="@color/black"
+        android:gravity="center"
+        android:onClick="setOnClickListener"
+        app:iconTint="@color/back_main"
+        tools:ignore="OnClick" />
+
+</LinearLayout>

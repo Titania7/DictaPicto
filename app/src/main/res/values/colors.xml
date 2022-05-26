@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="back_teacher">#F3B562</color>  <!-- couleur des boutons -->
+    <color name="back_main">#8CBEB2</color>
+    <color name="vertclair2">#d7e6b5</color>
+    <color name="bleuclair">#c6ded8</color>
+    <color name="vertclair1">#BDD684</color>
+    <color name="jauneclair1">#F2EBBF</color> <!-- couleur de la bande du haut du tel -->
+    <color name="vert">#588F27</color> <!-- boutin2 -->
+    <color name="brun">#18444b</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+</resources>
