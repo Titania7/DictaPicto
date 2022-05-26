@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DictaPicto</string>
+    <string name="outloudButton">Read out Loud</string>
+    <string name="OKbutton">OK</string>
+</resources>
